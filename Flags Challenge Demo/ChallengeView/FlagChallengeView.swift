@@ -108,7 +108,6 @@ struct FlagChallengeView: View {
                             .font(.system(size: 25))
                             .multilineTextAlignment(.center)
                             .cornerRadius(5)
-                            .disabled(viewModel.isTimerActive)
                             .onChange(of: viewModel.hoursTens) {
                                 handleTextFieldChange()
                             }
@@ -117,7 +116,6 @@ struct FlagChallengeView: View {
                             .font(.system(size: 25))
                             .multilineTextAlignment(.center)
                             .cornerRadius(5)
-                            .disabled(viewModel.isTimerActive)
                             .onChange(of: viewModel.hoursUnits) {
                                 handleTextFieldChange()
                             }
@@ -132,7 +130,6 @@ struct FlagChallengeView: View {
                             .font(.system(size: 25))
                             .multilineTextAlignment(.center)
                             .cornerRadius(5)
-                            .disabled(viewModel.isTimerActive)
                             .onChange(of: viewModel.minutesTens) {
                                 handleTextFieldChange()
                             }
@@ -141,7 +138,6 @@ struct FlagChallengeView: View {
                             .font(.system(size: 25))
                             .multilineTextAlignment(.center)
                             .cornerRadius(5)
-                            .disabled(viewModel.isTimerActive)
                             .onChange(of: viewModel.minutesUnits) {
                                 handleTextFieldChange()
                             }
@@ -156,7 +152,6 @@ struct FlagChallengeView: View {
                             .font(.system(size: 25))
                             .multilineTextAlignment(.center)
                             .cornerRadius(5)
-                            .disabled(false)
                             .onChange(of: viewModel.secondsTens) {
                                 handleTextFieldChange()
                             }
@@ -165,7 +160,6 @@ struct FlagChallengeView: View {
                             .font(.system(size: 25))
                             .multilineTextAlignment(.center)
                             .cornerRadius(5)
-                            .disabled(!viewModel.isTimerActive)
                             .onChange(of: viewModel.secondsUnits) {
                                 handleTextFieldChange()
                             }
